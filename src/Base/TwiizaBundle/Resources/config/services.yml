@@ -1,0 +1,7 @@
+parameters:
+#    base_twiiza.example.class: Base\TwiizaBundle\Example
+
+services:
+#    base_twiiza.example:
+#        class: %base_twiiza.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

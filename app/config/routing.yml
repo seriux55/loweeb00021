@@ -1,0 +1,8 @@
+base_user:
+    resource: "@BaseUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+base_twiiza:
+    resource: "@BaseTwiizaBundle/Resources/config/routing.yml"
+    prefix:   /
+
