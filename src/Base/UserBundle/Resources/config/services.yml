@@ -1,7 +1,11 @@
-parameters:
-#    base_user.example.class: Base\UserBundle\Example
-
 services:
-#    base_user.example:
-#        class: %base_user.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    s4a_user.my_provider:
+        class: Base\UserBundle\Security\Provider\MyProvider #Chemin vers le provider
+        public: false
+        arguments: ["@fos_user.user_manager"]
+    
+    base_user.registration.form.type:
+        class: Base\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: base_user_registration }

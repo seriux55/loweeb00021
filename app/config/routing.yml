@@ -6,3 +6,9 @@ base_twiiza:
     resource: "@BaseTwiizaBundle/Resources/config/routing.yml"
     prefix:   /
 
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+_console:
+    resource: "@CoreSphereConsoleBundle/Resources/config/routing.yml"
+    prefix: /_console
